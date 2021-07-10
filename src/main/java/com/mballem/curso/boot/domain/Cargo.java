@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -17,4 +18,7 @@ public class Cargo extends AbstractEntity<Long> {
     @ManyToOne
     @JoinColumn(name = "id_departamento_fk")
     private Departamento departamento;
+
+    @OneToMany(mappedBy = "cargo")
+    private List<Funcionario> funcionarios;
 }
