@@ -8,7 +8,7 @@ import com.mballem.curso.boot.domain.Departamento;
 public class DepartamentoDaoImpl extends AbstractDao<Departamento, Long> implements DepartamentoDao{
 
 	@Override
-	public Departamento finById(Long id) {
+	public Departamento findById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
