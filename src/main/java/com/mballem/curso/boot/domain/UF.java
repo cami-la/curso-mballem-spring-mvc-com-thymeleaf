@@ -37,5 +37,10 @@ public enum UF {
 
     private String sigla;
     private String descricao;
+    
+    UF(String sigla, String descricao) {
+    	this.sigla = sigla;
+    	this.descricao = descricao;
+    }
 
 }
