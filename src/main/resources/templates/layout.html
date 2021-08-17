@@ -19,7 +19,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	<link href="/css/style.css" rel="stylesheet" />
 </head>
 <body>
-	<header>
+	<header th:replace="fragments/header :: cabecalho">
 		<div>header</div>
 	</header>
 	
@@ -35,7 +35,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 		</section>
 	</div>
 	
-	<footer>
+	<footer th:replace="fragments/footer :: rodape">
 		<div>footer</div>
 	</footer>
 	
