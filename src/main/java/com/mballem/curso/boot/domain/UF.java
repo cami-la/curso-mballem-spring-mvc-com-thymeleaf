@@ -4,9 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@AllArgsConstructor
-@Getter
-@Setter
 public enum UF {
     AC("AC", "Acre"),
     AL("AL", "Alagoas"),
@@ -43,4 +40,19 @@ public enum UF {
     	this.descricao = descricao;
     }
 
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getSigla() {
+        return sigla;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
 }
